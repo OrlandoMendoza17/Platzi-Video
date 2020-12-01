@@ -1,0 +1,17 @@
+.Category{
+  & span{
+    font-size: 12px;
+  }
+  & h3{
+    @include titleStyle(28px, bold, $mainColor);
+    text-transform: uppercase;
+  }
+  &:hover > .PlayList{
+    @include scrollBarHorizontal(10px);
+    &::-webkit-scrollbar-track {
+      box-shadow: none; 
+      border-radius: 10px !important;
+      background-color: #dddddd;
+    }
+  }
+}

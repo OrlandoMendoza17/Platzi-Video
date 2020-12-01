@@ -1,0 +1,15 @@
+.RelatedSection{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  overflow: hidden;
+  & > .title{
+    @include titleStyle(28px, bold, #fff);
+  }
+  
+  .RelatedSection-container{
+    overflow: auto;
+    @include scrollBar(8px,#fe6195);
+  }
+}

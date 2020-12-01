@@ -1,0 +1,16 @@
+.Related{
+  position: relative;
+  
+  & > .Related-container{
+    position: fixed;
+    width: $asideWidth;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+  }
+}

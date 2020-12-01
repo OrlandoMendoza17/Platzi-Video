@@ -1,0 +1,30 @@
+.Search{
+  
+  .input-container{
+    
+    display: grid;
+    grid-template-columns: minmax(auto, 400px) auto;
+    align-items: center;
+    gap: 10px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px 0px #cacaca;
+    transition: .3s;
+    
+    &:hover{
+      box-shadow: none;
+    }
+    // #72b9dc
+    
+    input{
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      
+      &::placeholder{
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- aqui se pone el logo en la pestaña -->
+    <!-- <link rel="icon" href="img/logo de cit.ico"> -->
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- escribe aqui abajo -->
+    <section id="section" class="grid-template-full">
+      
+      <div class="home-sideBar">
+        <a href="index.html" class="logo">
+          <img class="img-fluid" src="img/platzi-video.png" alt="">
+        </a>
+
+        <div class="playList">
+          <h2>Mi Playlist</h2>
+          <ol  id="myPlayList">
+            <!-- peliculas insertadas por peliculas.js -->
+          </ol>
+        </div>
+
+        <div class="playList">
+          <h2>PlayList de Amigos</h2>
+          <ul id="playListAmigos">
+            <!-- Users insertados por peliculas.js-->
+          </ul>
+        </div>
+
+        <div id="modal" class="modal-window">
+          <div class="movie-description">
+            <h2>Ancestral World</h2>
+            <div class="modal-grid">
+              <img src="https://yts.mx/assets/images/movies/ancestral_world_2020/medium-cover.jpg" alt="">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, hic sit fugit recusandae obcaecati adipisci vitae quae assumenda aspernatur ea laudantium quas, eos, rem dolore mollitia voluptas molestias similique dignissimos.</p>
+            </div>
+          </div>
+          <button class="btn btn-danger">Cerrar</button>
+        </div>
+      </div>
+
+      <div class="home-primary">
+
+        <form id="form" action="" class="primary-search">
+          <input type="text" placeholder="Busca tu película" name="search" id="">
+        </form>
+
+        <div class="primary-user">
+          <img src="img/echame-la-culpa.jpg" alt="">
+          <span>Orlando Mendoza</span>
+        </div>
+
+        <div id="primary-main" class="primary-main">
+          <!-- Peliculas insertadas por peliculas.js -->
+        </div>
+
+      </div>
+
+      <div id="featuring" class="home-featuring" style="display: none;">
+        <div class="featuring-container">
+          <img src="img/echame-la-culpa.jpg" alt="">
+          <div class="featuring-info">
+            <h2>Midnight City</h2>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/peliculas.js"></script>
+
+  </body>
+</html>

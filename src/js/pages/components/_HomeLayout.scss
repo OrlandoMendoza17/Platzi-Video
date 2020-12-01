@@ -1,0 +1,16 @@
+.HomeLayout{
+  display: grid;
+  grid-template-columns: $asideWidth 1fr;
+  grid-template-areas: "related categories";
+  
+  & > .Related{
+    grid-area: related;
+    
+    & > .Related-container{
+      background-color: $mainColor;
+    }
+  }
+  & > .Categories{
+    grid-area: categories;
+  }
+}

@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import './lib/reset';
+@import './lib/variables';
+@import './lib/mixins';
+
+// componentes React
+@import '../js/pages/components/HomeLayout';
+@import '../js/pages/components/related';
+@import '../js/aside/components/friendsPlayList';
+@import '../js/aside/components/friend';
+@import '../js/categories/components/categories';
+@import '../js/widgets/containers/search';
+@import '../js/categories/components/category';
+@import '../js/playlist/components/playlist';
+@import '../js/playlist/components/media';

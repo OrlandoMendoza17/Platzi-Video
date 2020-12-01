@@ -1,0 +1,19 @@
+.Playlist{
+  
+  
+  @include scrollBarHorizontal(10px);
+  &::-webkit-scrollbar-track {
+    box-shadow: none; 
+    border-radius: 10px !important;
+    background-color: #dddddd;
+  }
+  
+  display: grid;
+  grid-template-rows: auto;
+  gap: 15px;
+  grid-auto-flow: column;
+  grid-auto-columns: 250px;
+  overflow: auto;
+  
+  transition: .3s;
+}

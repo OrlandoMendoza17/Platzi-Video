@@ -1,0 +1,25 @@
+$friendImageSize: 35px;
+
+.Friend{
+  padding: 5px;
+  cursor: pointer;
+  @include titleStyle(16px, 500, #fff);
+  
+  display: grid;  
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px; 
+  
+  &:hover{
+    background-color: #01caff;
+  }
+  
+  .Friend-image{
+    @include imageAsBackground($friendImageSize);
+    width: $friendImageSize;
+    
+    img{
+      border-radius: 50%;
+    }
+  }
+}

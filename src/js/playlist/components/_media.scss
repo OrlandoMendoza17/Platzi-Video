@@ -1,0 +1,10 @@
+
+.Media > .Media-image{
+  @include imageAsBackground(140px)
+}
+// .Media > .Media-image > img{
+//   width: 250px;
+// }
+.Media > h4{
+  font-size: 16px;
+}
