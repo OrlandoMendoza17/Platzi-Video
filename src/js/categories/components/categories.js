@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Search from '../../widgets/containers/search'
 import Category from './category'
 
@@ -16,4 +17,9 @@ function Categories(props){
     </div>
   )
 }
+
+Categories.propTypes = {
+  categories: PropTypes.array
+}
+
 export default Categories;

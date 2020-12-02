@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-
+import PropTypes from 'prop-types'
 
 class Media extends PureComponent{
   state = {
@@ -11,6 +11,7 @@ class Media extends PureComponent{
       title: 'John Freddy Vega',
       cover: '../images/covers/mejorandola.jpg'
     })
+    console.log(this)
     setTimeout(()=>{
       console.log(this.state.title)
     },1000)
@@ -30,4 +31,11 @@ class Media extends PureComponent{
   }
 }
 
+Media.propTypes ={
+  id: PropTypes.number,
+  title: PropTypes.string,
+  cover: PropTypes.string,
+  src: PropTypes.string,
+  type: PropTypes.string,
+}
 export default Media;

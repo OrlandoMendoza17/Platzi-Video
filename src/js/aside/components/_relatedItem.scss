@@ -1,6 +1,6 @@
 $friendImageSize: 35px;
 
-.Friend{
+.RelatedItem{
   padding: 5px;
   cursor: pointer;
   @include titleStyle(16px, 500, #fff);
@@ -14,9 +14,10 @@ $friendImageSize: 35px;
     background-color: #01caff;
   }
   
-  .Friend-image{
+  .RelatedItem-Image{
     @include imageAsBackground($friendImageSize);
     width: $friendImageSize;
+    margin: 0;
     
     img{
       border-radius: 50%;

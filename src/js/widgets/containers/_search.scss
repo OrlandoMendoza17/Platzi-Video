@@ -7,12 +7,12 @@
     align-items: center;
     gap: 10px;
     background-color: #ebebeb;
+    box-shadow: none;
     border-radius: 20px;
-    box-shadow: 4px 4px 6px 0px #cacaca;
     transition: .3s;
     
     &:hover{
-      box-shadow: none;
+      box-shadow: 4px 4px 6px 0px #cacaca;
     }
     // #72b9dc
     

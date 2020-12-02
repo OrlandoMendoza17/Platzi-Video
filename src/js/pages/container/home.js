@@ -1,34 +1,27 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import HomeLayout from '../components/HomeLayout'
 import Related from '../components/related';
-import ImageBrand from '../../icons/components/imageBrand';
-import RelatedSection from '../../aside/components/relatedSection'
 import Categories from '../../categories/components/categories';
-import data from '../../../api.json'
-
-console.log(data)
 
 class Home extends Component{
   
   setRef = (element) => {
     this.media = element
   }
-  
+ 
   render(){
     return(
       
       <HomeLayout>
         
-        <Related>
-          
-          <ImageBrand/>
-          <RelatedSection nameSection="Mi Playlist"/>
-          <RelatedSection nameSection="Playlist de Amigos"/>
-          
-        </Related>
+        <Related
+          playlist={this.props.playlist}
+          users={this.props.users}
+        />
         
         <Categories 
-          categories={data.categories}
+          categories={this.props.categories}
           handleClick={this.handleClick}
           setRef={this.setRef}
         />
@@ -39,4 +32,9 @@ class Home extends Component{
   }
 }
 
+Home.propTypes = {
+  categories: PropTypes.array,
+  playlist: PropTypes.array,
+  users: PropTypes.array,
+}
 export default Home;

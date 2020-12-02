@@ -1,6 +1,7 @@
 
 .Media > .Media-image{
-  @include imageAsBackground(140px)
+  @include imageAsBackground(140px);
+  background-color: rgb(158, 158, 158);
 }
 // .Media > .Media-image > img{
 //   width: 250px;

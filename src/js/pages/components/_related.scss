@@ -10,7 +10,8 @@
     
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto repeat(2, minmax(100px, 500px));
     gap: 10px;
+    align-content: start;
   }
 }

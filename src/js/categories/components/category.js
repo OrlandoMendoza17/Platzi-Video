@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import PlayList from '../..//playlist/components/playlist';
-import Media from '../..//playlist/components/media';
 
 function Category(props){
   return(
@@ -13,11 +13,14 @@ function Category(props){
       
       <PlayList 
         playlist={props.playlist}
-        setRef={props.setRef}
       /> 
       
     </div>
   )
+}
+
+Category.propTypes = {
+  playlist: PropTypes.array
 }
 
 export default Category;
