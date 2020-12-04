@@ -8,7 +8,7 @@ function PlayList(props){
     <div className="Playlist py-3">
       {
         props.playlist.map((media)=>{
-          return <Media {...media} key={media.id}/>
+          return <Media {...media} handleOpenModal={props.handleOpenModal} key={media.id}/>
         })
       }
     </div>

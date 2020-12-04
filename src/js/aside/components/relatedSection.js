@@ -1,7 +1,6 @@
 import React from 'react'
 
 function RelatedSection(props){
-  console.log(props)
   return(
     <div className="RelatedSection">
       

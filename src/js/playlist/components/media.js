@@ -19,7 +19,7 @@ class Media extends PureComponent{
   render(){
     return(
     
-      <div className="Media" onClick={this.handleClick}>
+      <div className="Media" onClick={this.props.handleOpenModal}>
          <div className="Media-image">
            <img src={this.state.cover} alt=""/>
          </div>

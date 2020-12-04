@@ -1,4 +1,4 @@
-.Search{
+.SearchForm{
   
   .input-container{
     
@@ -21,9 +21,10 @@
       border: none;
       background-color: transparent;
       outline: none;
+      font-weight: bold;
       
       &::placeholder{
-        font-weight: bold;
+        color: $gray-600;
       }
     }
   }

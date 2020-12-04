@@ -1,0 +1,43 @@
+.Modal-container{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $colorTransparent;
+  display: grid;
+  grid-template-columns: minmax(auto, 768px);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  
+  & > .Modal{
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid $mainColor;
+    
+    & .Modal-header{
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: start;
+    }
+    
+    & .Modal-img-container{
+      @include imageAsBackground(400px)
+    }
+  }
+  
+  & button{
+    
+    &:hover{
+      & > svg{
+        color: $danger;
+      }
+    }
+    
+    & > svg{
+      color: $mainColor;
+    }
+  }
+}
