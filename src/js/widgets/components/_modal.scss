@@ -1,43 +1,48 @@
 .Modal-container{
   position: fixed;
-  z-index: 9999;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: $colorTransparent;
-  display: grid;
-  grid-template-columns: minmax(auto, 768px);
-  grid-template-rows: auto;
-  justify-content: center;
-  align-content: center;
+    z-index: 9999;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: minmax(auto, 768px);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
   
   & > .Modal{
     background-color: #fff;
     border-radius: 20px;
-    border: 1px solid $mainColor;
+    border: 1px solid #171b2f;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    gap: 10px;
     
     & .Modal-header{
       display: grid;
       grid-template-columns: 1fr auto;
       align-items: start;
+      
+      h3{
+        font-size: inherit;
+      }
+      
+      & > button > svg{
+        fill: $mainColor;
+      }
+      & > button:hover > svg{
+        fill: $danger;
+      }
+      
     }
     
     & .Modal-img-container{
       @include imageAsBackground(400px)
     }
   }
+
   
-  & button{
-    
-    &:hover{
-      & > svg{
-        color: $danger;
-      }
-    }
-    
-    & > svg{
-      color: $mainColor;
-    }
-  }
 }

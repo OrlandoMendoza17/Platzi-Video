@@ -1,0 +1,14 @@
+.Spinner{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-weight: bold;
+  background-color: $colorTransparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

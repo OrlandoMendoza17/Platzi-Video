@@ -11,7 +11,7 @@ $friendImageSize: 35px;
   gap: 10px; 
   
   &:hover{
-    background-color: #01caff;
+    background-color: $hoverColor;
   }
   
   .RelatedItem-Image{

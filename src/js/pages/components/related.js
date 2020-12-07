@@ -14,10 +14,10 @@ function Related(props){
         
         <RelatedSection key={1} nameSection="Mi Playlist">
           {
-            props.playlist.map(({title, id})=>(
+            props.playlist.map((item)=>(
                 
-              <RelatedItem name={title} key={id}>
-                <RelatedItemNumber id={id} />
+              <RelatedItem {...item} key={item.id} handleOpenModal={props.handleOpenModal}>
+                <RelatedItemNumber id={item.id}/>
               </RelatedItem>
             ))
           }
@@ -27,7 +27,7 @@ function Related(props){
           {
             props.users.map(({name, image, id})=>(
                 
-              <RelatedItem name={name} key={id}>
+              <RelatedItem title={name} key={id}>
                 <RelatedItemImage id={image} />
               </RelatedItem>
             ))

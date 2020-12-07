@@ -1,0 +1,33 @@
+.Volume{
+  position: relative;
+  
+  .Volume-range{
+    display: none !important;
+    position: absolute;
+    top: -60px;
+    width: 100px;
+    left: calc(50% - 50px);
+    display: flex;
+    transform: rotateZ(-90deg);
+    
+    input{
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  .Volume-button{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    
+    button{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  &:hover .Volume-range{
+    display: block !important;
+  }
+}

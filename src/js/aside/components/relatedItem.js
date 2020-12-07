@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react'
 
 class RelatedItem extends PureComponent{
   handleClick = ()=>{
-    console.log(this)
+    this.props.handleOpenModal(this.props)
   }
   render(){
     return(
@@ -11,7 +11,7 @@ class RelatedItem extends PureComponent{
           this.props.children
         }
         <span className="RelatedItem-title">
-          {this.props.name}
+          {this.props.title}
         </span>
       </div>
     )

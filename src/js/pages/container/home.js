@@ -6,24 +6,29 @@ import Related from '../components/related';
 import Categories from '../../categories/components/categories';
 import ModalContainer from '../../widgets/containers/modalContainer'
 import Modal from '../../widgets/components/modal'
+import VideoPlayer from '../../player/containers/video-player'
+import YoutubeVideo from '../../player/components/youtube-video'
 
 class Home extends Component{
   
   state = {
     modalVisible: false,
     modalTitle: 'No hay ningun titulo',
-    modalImg: ''
+    modalImg: '',
+    modalSrcVideo: '',
+    videoType: '',
   }
   //Metodo que abre el modal con la info del Media
-  handleOpenModal = (event) =>{
-    const ImgMedia = event.target.children[0].children[0].getAttribute('src')
+  handleOpenModal = (mediaProps) =>{
     
     this.setState({
       modalVisible: true,
-      modalTitle: event.target.innerText,
-      modalImg: ImgMedia
+      modalTitle: mediaProps.title,
+      modalImg: mediaProps.cover,
+      modalSrcVideo: mediaProps.src,
+      videoType: mediaProps.videoType,
     })
-    console.log(event.target.children[0].children[0].getAttribute('src'))
+    // console.log(mediaProps)
   }
   //Metodo que cierra el modal
   handleCloseModal = () =>{
@@ -31,7 +36,6 @@ class Home extends Component{
       modalVisible: false
     })
   }
-  
   setRef = (element) => {
     this.media = element
   }
@@ -42,8 +46,9 @@ class Home extends Component{
         <HomeLayout>
           
           <Related
-            playlist={this.props.playlist}
             users={this.props.users}
+            playlist={this.props.playlist}
+            handleOpenModal={this.handleOpenModal}
           />
           
           <Categories 
@@ -57,10 +62,31 @@ class Home extends Component{
             <ModalContainer>
               
               <Modal 
-                handleClick={this.handleCloseModal}
                 title={this.state.modalTitle}
+                videoType={this.state.videoType}
+                handleClick={this.handleCloseModal}
                 srcImageMedia={this.state.modalImg}
-              />
+              >
+                {
+                  (()=>{
+                    if(this.state.videoType === 'NormalVideo')
+                      return(
+                        <VideoPlayer
+                          autoplay
+                          src={this.state.modalSrcVideo}
+                        />
+                      )
+                    else if(this.state.videoType ===  'YoutubeVideo'){
+                      return(
+                        <YoutubeVideo
+                          src={this.state.modalSrcVideo}
+                        />
+                      )
+                    }
+                  })()
+                }
+                
+              </Modal>
               
             </ModalContainer>
           }

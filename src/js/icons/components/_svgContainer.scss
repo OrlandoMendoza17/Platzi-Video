@@ -1,0 +1,26 @@
+.Youtube-video, 
+.VideoPlayer,
+.Media-image{
+  
+  background-color: $colorTransparent;
+  
+  video, img{
+    z-index: 2;
+  }
+  img{
+    position: relative;
+  }
+  .svg-container{
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg{
+      fill: $colorLightTransparent;
+    }
+  }
+}

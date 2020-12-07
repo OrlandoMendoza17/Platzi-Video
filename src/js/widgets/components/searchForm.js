@@ -11,7 +11,7 @@ function SearchForm(props){
           type="text" 
           className="p-1" 
           placeholder="Busca a un artista, tema o amigo"
-          defaultValue={'Luis Fonsi'}
+          // defaultValue={'Luis Fonsi'}
         />
         <button type="submit">
           <SearchIcon className="mr-1" size={20} color={'#171b2f'} />

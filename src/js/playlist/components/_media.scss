@@ -1,6 +1,5 @@
 .Media{
   position: relative;
-  cursor: pointer;
   
   & > .Media-image{
     @include imageAsBackground(140px);
@@ -11,16 +10,24 @@
   & > h4{
     font-size: 16px;
   }
-  
-  &::before{
-    content: " ";
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  & > a{
+    cursor: pointer;
+    font-size: 12px;
+    
+    &:hover{
+      color: $primary !important;
+    }
   }
+  
+  // &::before{
+  //   content: " ";
+  //   z-index: 2;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  // }
 }
 
 // .Media > .Media-image > img{

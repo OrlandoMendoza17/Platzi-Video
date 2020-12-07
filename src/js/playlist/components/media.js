@@ -1,31 +1,53 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types'
+import svgContainer from '../../icons/components/container'
+import ImageIcon from '../../icons/components/image'
+import SvgContainer from '../../icons/components/container';
 
 class Media extends PureComponent{
   state = {
     title: this.props.title,
-    cover: this.props.cover
+    cover: this.props.cover,
+    author: this.props.author,
+    authorURL: this.props.authorURL
   }
   handleClick = (event) => {
-    this.setState({
-      title: 'John Freddy Vega',
-      cover: '../images/covers/mejorandola.jpg'
-    })
+   
     console.log(this)
-    setTimeout(()=>{
-      console.log(this.state.title)
-    },1000)
+    this.props.handleOpenModal(this.props)
+   
   }
   render(){
+    
+    const {
+      title, 
+      cover, 
+      author, 
+      authorURL
+    } = this.state
+  
     return(
     
-      <div className="Media" onClick={this.props.handleOpenModal}>
-         <div className="Media-image">
-           <img src={this.state.cover} alt=""/>
-         </div>
-         <h4>
-           {this.state.title}
-         </h4>
+      <div className="Media">
+          <div className="Media-image" onClick={this.handleClick}>
+            <img src={cover} alt=""/>
+            <SvgContainer>
+              <ImageIcon
+                size={50}
+              />
+            </SvgContainer>
+          </div>
+          <h4>
+              {
+                (title.length > 25) ?
+                  `${title.substring(0,25)}...` 
+                : 
+                  title
+              }
+          </h4>
+          <a href={authorURL} target="_blank" className='text-secondary'>
+            {author}
+          </a>
       </div> 
      ) 
   }

@@ -11,6 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, '../../dist/js'),
     filename: '[name].js'
   },
+  devtool: 'eval-source-map',
   module: {
     rules: [
       //.HTML LOADERS

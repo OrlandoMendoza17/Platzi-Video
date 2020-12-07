@@ -1,0 +1,12 @@
+.Youtube-video{
+  position:  relative;
+  display: flex;
+  align-items: center;
+  background-color: $colorTransparent;
+  height: 100%;
+  
+  iframe{
+    position: relative;
+    z-index: 2;
+  }
+}

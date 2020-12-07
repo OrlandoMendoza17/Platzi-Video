@@ -4,7 +4,7 @@ import CloseIcon from '../../icons/components/close-icon'
 function Modal(props){
   return(
     <div className="Modal-container p-2">
-      <div className="Modal p-3">
+      <div className="Modal my-3 my-lg-5 p-3">
         
         <div className="Modal-header">
           
@@ -16,9 +16,9 @@ function Modal(props){
             />
           </button>
         </div>
-        <div className="Modal-img-container mt-3">
+        {/* <div className="Modal-img-container mt-3">
           <img src={props.srcImageMedia} alt=""/>
-        </div>
+        </div> */}
         
         {
           props.children
