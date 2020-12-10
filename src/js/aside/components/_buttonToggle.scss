@@ -1,0 +1,25 @@
+.ButtonToggle{
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: 1px solid $colorLightTransparent;
+  background-color: $mainColor;
+  border-radius: 50%;
+  right: 30px;
+  bottom: 30px;
+  transition: .3s;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  cursor: pointer;
+  
+  svg{
+    fill: #fff;
+  }
+  
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+}

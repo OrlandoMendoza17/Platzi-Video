@@ -1,17 +1,37 @@
 .Related{
-  position: relative;
+  z-index: 9999;
+  position: fixed;
   
   & > .Related-container{
+    z-index: 100;
     position: fixed;
-    width: $asideWidth;
+    width: 100%;
+    max-width: 400px;
     height: 100%;
     top: 0;
     left: 0;
+    transition: .3s;
+    transform: translateX(-100%);
     
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(2, minmax(100px, 500px));
     gap: 10px;
     align-content: start;
+    
+    @media screen and (min-width: 768px){
+      transform: translateX(0%);
+      width: 300px;
+    }
+    @media screen and (min-width: 992px){
+      width: 350px;
+    }
+  }
+  
+  & > .Related-container.onScreen{
+    transform: translateX(0%);
+  }
+  @media screen and (min-width: 768px){
+    position: relative;
   }
 }

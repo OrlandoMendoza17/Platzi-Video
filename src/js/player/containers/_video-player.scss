@@ -2,7 +2,7 @@ iframe{
   width: 100%;
 }
 video{
-  position: absolute;
+  // position: absolute;
   height: 100%;
   width: 100%; 
   /* top: 0; */
@@ -15,4 +15,5 @@ video{
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }

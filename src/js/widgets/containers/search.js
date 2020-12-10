@@ -7,8 +7,8 @@ class Search extends Component{
   }
   handleChange= (event) =>{
     event.preventDefault()
-    alert(`Funcionó, ${this.input.value} es el valor ingresado`)
-    console.log(event)
+    alert(`Buscate: "${this.input.value}". La opcion del buscador aún no está disponible`)
+    this.input.value = ""
   }
   setInputRef = (element) =>{
     this.input = element;

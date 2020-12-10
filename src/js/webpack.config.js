@@ -9,7 +9,7 @@ module.exports = {
   mode: 'development',
   output: {
     path: path.resolve(__dirname, '../../dist/js'),
-    filename: '[name].js'
+    filename: '[name].[contentHash].js'
   },
   devtool: 'eval-source-map',
   module: {

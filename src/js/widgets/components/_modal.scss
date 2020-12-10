@@ -7,19 +7,21 @@
     background-color: rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: minmax(auto, 768px);
-    grid-template-rows: 1fr;
+    grid-template-rows: minmax(100px, 500px);;
     justify-content: center;
     align-content: center;
   
   & > .Modal{
+    // max-height: 600px;
     background-color: #fff;
     border-radius: 20px;
     border: 1px solid #171b2f;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    align-items: center;
+    // align-items: center;
     gap: 10px;
+    overflow: hidden;
     
     & .Modal-header{
       display: grid;

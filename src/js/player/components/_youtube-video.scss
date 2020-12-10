@@ -9,4 +9,14 @@
     position: relative;
     z-index: 2;
   }
+  
+  &::after{
+    content: 'Cargando...';
+    position: absolute;
+    font-weight: bold;
+    top: calc(50% + 25px);
+    left: calc(50% - 40px);
+    display: block;
+    color: $colorLightTransparent;
+  }
 }

@@ -1,6 +1,7 @@
 $friendImageSize: 35px;
 
-.RelatedItem{
+.RelatedItem,
+.RelatedFriend{
   padding: 5px;
   cursor: pointer;
   @include titleStyle(16px, 500, #fff);

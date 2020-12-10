@@ -13,11 +13,11 @@ function YoutubeVideo(props){
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen="allowfullscreen"
       ></iframe>
-        <SvgContainer>
-          <YoutubeIcon
-            size={50}
-          />
-        </SvgContainer>
+      <SvgContainer>
+        <YoutubeIcon
+          size={50}
+        />
+      </SvgContainer>
     </div>
   )
 }

@@ -4,11 +4,17 @@ import CloseIcon from '../../icons/components/close-icon'
 function Modal(props){
   return(
     <div className="Modal-container p-2">
-      <div className="Modal my-3 my-lg-5 p-3">
+      <div className="Modal p-3">
         
         <div className="Modal-header">
           
-          <h3>{props.title}</h3>
+          <h3>
+            {
+              props.title.length > 40 
+                ? `${props.title.substring(0, 50)}...`
+                : props.title
+            }
+          </h3>
           
           <button onClick={props.handleClick}>
             <CloseIcon 
