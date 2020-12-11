@@ -1,26 +1,20 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const webpack = require('webpack')
 
 module.exports = {
   entry: {
     index: path.resolve(__dirname,'entries/index.js'),
   },
-  mode: 'development',
-  output: {
-    path: path.resolve(__dirname, '../../dist/js'),
-    filename: '[name].[contentHash].js'
-  },
   devtool: 'eval-source-map',
   module: {
     rules: [
       //.HTML LOADERS
-      {
-        test: /\.html$/,
-        use:{
-          loader: 'html-loader'
-        }
-      },
+      // {
+      //   test: /\.html$/,
+      //   use:{
+      //     loader: 'html-loader'
+      //   }
+      // },
       //.JSS LOADERS
       {
         test: /\.js$/,
@@ -64,6 +58,7 @@ module.exports = {
   },
   plugins: [
     // new webpack.HotModuleReplacementPlugin(),
+    
     new HtmlWebpackPlugin({
       filename: `../../index.html`,
       template: path.resolve(__dirname, `../templates/index.html`),

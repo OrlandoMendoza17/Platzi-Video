@@ -1,4 +1,4 @@
-import 'bootstrap'
+// import 'bootstrap'
 import React from 'react'
 import ReactDOM, { render } from 'react-dom'
 import '../../scss/style.scss'
