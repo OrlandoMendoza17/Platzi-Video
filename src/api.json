@@ -11,7 +11,7 @@
           "authorURL": "https://www.youtube.com/channel/UCLsSfk2x6p3XvlknDi39zCQ",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/programar-cambio-mi-vida.png",
+          "cover": "./database/images/covers/programar-cambio-mi-vida.webp",
           "src": "https://www.youtube.com/embed/5f5Ig_U2Bpk",
           "id": 1
         },
@@ -21,7 +21,7 @@
           "authorURL": "https://www.youtube.com/user/GastroMstr",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/broly-ultra-instinto.png",
+          "cover": "./database/images/covers/broly-ultra-instinto.webp",
           "src": "https://www.youtube.com/embed/7zNG8CJqTjo",
           "id": 2
         },
@@ -31,7 +31,7 @@
           "authorURL": "",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/ACR-Extended-E3-Trailer.png",
+          "cover": "./database/images/covers/ACR-Extended-E3-Trailer.webp",
           "src": "https://www.youtube.com/embed/8-Ixo7QXw_E",
           "id": 3
         },
@@ -41,7 +41,7 @@
           "authorURL": "",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/noTeRindas.png",
+          "cover": "./database/images/covers/noTeRindas.webp",
           "src": "https://www.youtube.com/embed/eZGvSUNOlzo",
           "id": 4
         },
@@ -51,7 +51,7 @@
           "authorURL": "",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/pennywise.png",
+          "cover": "./database/images/covers/pennywise.webp",
           "src": "https://www.youtube.com/embed/06UPHmfEKZY",
           "id": 5
         },
@@ -61,7 +61,7 @@
           "authorURL": "https://www.youtube.com/user/GastroMstr",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/goku-vegeta.png",
+          "cover": "./database/images/covers/goku-vegeta.webp",
           "src": "https://www.youtube.com/embed/dQUHaTTGkxI",
           "id": 6
         }
@@ -78,7 +78,7 @@
           "authorURL": "https://www.youtube.com/user/mejorandolaweb",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/techworld-4-years.png",
+          "cover": "./database/images/covers/techworld-4-years.webp",
           "src": "https://www.youtube.com/embed/UKNv_z5OvCY",
           "id": 1
         },
@@ -88,17 +88,17 @@
           "authorURL": "https://www.youtube.com/user/mejorandolaweb",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/estado-del-frontend-2019.png",
+          "cover": "./database/images/covers/estado-del-frontend-2019.webp",
           "src": "https://www.youtube.com/embed/YD0slY1P-uE",
           "id": 2
         },
-        {
+        { 
           "title": "10 ideas de ciencia ficción que están a punto de ser realidad",
           "author": "Platzi",
           "authorURL": "https://www.youtube.com/user/mejorandolaweb",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/es-el-2019.png",
+          "cover": "./database/images/covers/es-el-2019.webp",
           "src": "https://www.youtube.com/embed/XHaCSKWHhuk",
           "id": 3
         },
@@ -108,7 +108,7 @@
           "authorURL": "https://www.youtube.com/user/mejorandolaweb",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/regalos-para-geeks.png",
+          "cover": "./database/images/covers/regalos-para-geeks.webp",
           "src": "https://www.youtube.com/embed/t2HOxl_KHLY",
           "id": 4
         },
@@ -118,7 +118,7 @@
           "authorURL": "https://www.youtube.com/user/mejorandolaweb",
           "type": "video",
           "videoType": "YoutubeVideo",
-          "cover": "./database/images/covers/javascript-2020.png",
+          "cover": "./database/images/covers/javascript-2020.webp",
           "src": "https://www.youtube.com/embed/q5jix5Wuzg4",
           "id": 5
         }
@@ -135,7 +135,7 @@
           "authorURL": "https://www.instagram.com/assassinscreedes/",
           "type": "video",
           "videoType": "NormalVideo",
-          "cover": "./database/images/covers/assassins-creed-valhalla.png",
+          "cover": "./database/images/covers/assassins-creed-valhalla.webp",
           "src": "./database/videos/assassins-creed-valhalla-el-amo-y-senor-de-inglaterra-anuncio-tv.mp4",
           "id": 1
         },
@@ -145,7 +145,7 @@
           "authorURL": "https://www.instagram.com/residentevil/",
           "type": "video",
           "videoType": "NormalVideo",
-          "cover": "./database/images/covers/resident-evil-4-remake-in-works.png",
+          "cover": "./database/images/covers/resident-evil-4-remake-in-works.webp",
           "src": "./database/videos/resident-evil-4-hd-launch-trailer-ps3-xbox-360.mp4",
           "id": 2
         },
@@ -155,7 +155,7 @@
           "authorURL": "https://www.instagram.com/thedivisiongame_us/",
           "type": "video",
           "videoType": "NormalVideo",
-          "cover": "./database/images/covers/watch-dogs-legion.png",
+          "cover": "./database/images/covers/watch-dogs-legion.webp",
           "src": "./database/videos/watch-dogs-legion-official-launch-trailer.mp4",
           "id": 3
         },
@@ -165,7 +165,7 @@
           "authorURL": "",
           "type": "video",
           "videoType": "NormalVideo",
-          "cover": "./database/images/covers/tom-clancy's-the-division.png",
+          "cover": "./database/images/covers/tom-clancy's-the-division.webp",
           "src": "./database/videos/the-division-2-trailer.mp4",
           "id": 4
         },
@@ -175,7 +175,7 @@
           "authorURL": "https://www.instagram.com/tombraider/",
           "type": "video",
           "videoType": "NormalVideo",
-          "cover": "./database/images/covers/shadow-of-the-tomb-raider.png",
+          "cover": "./database/images/covers/shadow-of-the-tomb-raider.webp",
           "src": "./database/videos/shadow-of-the-tomb-raider-official-trailer.mp4",
           "id": 5
         }

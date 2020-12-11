@@ -3,52 +3,52 @@
     {
       "id":"1",
       "name": "Orlando Mendoza",
-      "image": "./database/images/orlando-mendoza.png"
+      "image": "./database/images/orlando-mendoza.webp"
     },
     {
       "id":"2",
       "name": "Freddy Vega",
-      "image": "./database/images/freddy-vega.png"
+      "image": "./database/images/freddy-vega.webp"
     },
     {
       "id":"3",
       "name": "Christian Van Der Henst",
-      "image": "./database/images/christian-van-der-henst.png"
+      "image": "./database/images/christian-van-der-henst.webp"
     },
     {
       "id":"4",
       "name": "Leonidas Esteban",
-      "image": "./database/images/leonidas-esteban.png"
+      "image": "./database/images/leonidas-esteban.webp"
     },
     {
       "id":"5",
       "name": "Oscar Barajas",
-      "image": "./database/images/oscar-barajas.png"
+      "image": "./database/images/oscar-barajas.webp"
     },
     {
       "id":"6",
       "name": "Orlando Mendoza",
-      "image": "./database/images/orlando-mendoza.png"
+      "image": "./database/images/orlando-mendoza.webp"
     },
     {
       "id":"7",
       "name": "Freddy Vega",
-      "image": "./database/images/freddy-vega.png"
+      "image": "./database/images/freddy-vega.webp"
     },
     {
       "id":"8",
       "name": "Christian Van Der Henst",
-      "image": "./database/images/christian-van-der-henst.png"
+      "image": "./database/images/christian-van-der-henst.webp"
     },
     {
       "id":"9",
       "name": "Leonidas Esteban",
-      "image": "./database/images/leonidas-esteban.png"
+      "image": "./database/images/leonidas-esteban.webp"
     },
     {
       "id":"10",
       "name": "Oscar Barajas",
-      "image": "./database/images/oscar-barajas.png"
+      "image": "./database/images/oscar-barajas.webp"
     }
   ]
 }
