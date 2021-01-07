@@ -17,37 +17,37 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          'css-loader'
-        ]
-      },
-      {
         test: /\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'css-loader',
             options:{
-              postcssOptions:{
-                plugins:[
-                  // require('cssnano'),
-                  require('autoprefixer')({
-                    flexbox: true,
-                    grid: false,
-                  })
-                ]
-              }
+              importLoaders: 1
             }
           },
+          'postcss-loader',
           'sass-loader',
         ]
+      },
+      //.MEDIA LOADERS
+      {
+        test: /\.jpg|jpeg|png|gif|jfif|woff|eot|ttf|svg|mp4|webm$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 100000,
+            fallback: {
+              loader: "file-loader",
+              options: {
+                // name: "../img/[name].[ext]",
+                name: "../[path][name].[ext]",
+              }
+            }
+          }
+        }
       }
     ]
   },
@@ -59,12 +59,18 @@ module.exports = merge(common, {
   },
   plugins:[
     //CSS FILES OUTPUT
-    new webpack.DllReferencePlugin({
-      manifest: require('./modules-manifest.json')
+    new HtmlWebpackPlugin({
+      title: 'Platzi Video',
+      chunks: ['index'],
+      template: path.resolve(__dirname, '../templates/index.html'),
+      filename: '../../index.html'
     }),
     new MiniCssExtractPlugin({
       filename: '../css/[name].[contentHash].css',
       chunkFilename: 'css/[id].css'
+    }),
+    new webpack.DllReferencePlugin({
+      manifest: require('./modules-manifest.json')
     }),
     new AddAssetHtmlPlugin({
       filepath: path.resolve(__dirname, '../../dist/js/*.dll.js'),

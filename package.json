@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dev": "webpack --config ./src/js/webpack.dev.js",
+    "build-dll": "webpack --config ./src/js/webpack.dll.js",
     "build-prod": "webpack --config ./src/js/webpack.prod.js",
-    "build-dll": "webpack --config ./src/js/webpack.dll.js"
+    "build-dev": "webpack --config ./src/js/webpack.dev.js",
+    "build-devserver": "webpack-dev-server --config ./src/js/webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -49,7 +50,7 @@
     "terser-webpack-plugin": "1.4.5",
     "url-loader": "4.1.0",
     "webpack": "4.44.2",
-    "webpack-cli": "4.1.0",
+    "webpack-cli": "3.3.2",
     "webpack-dev-server": "3.11.0",
     "webpack-merge": "4.2.2"
   }
