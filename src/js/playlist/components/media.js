@@ -54,7 +54,7 @@ class Media extends PureComponent{
 }
 
 Media.propTypes ={
-  id: PropTypes.number,
+  id: PropTypes.string,
   title: PropTypes.string,
   cover: PropTypes.string,
   src: PropTypes.string,

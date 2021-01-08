@@ -8,7 +8,7 @@
       "videoType": "NormalVideo",
       "cover": "./database/images/covers/assassins-creed-valhalla.png",
       "src": "./database/videos/assassins-creed-valhalla-el-amo-y-senor-de-inglaterra-anuncio-tv.mp4",
-      "id": 1
+      "id": "1"
     },
     {
       "title": "Resident Evil 4 HD Xbox 360",
@@ -18,7 +18,7 @@
       "videoType": "NormalVideo",
       "cover": "./database/images/covers/resident-evil-4-remake-in-works.png",
       "src": "./database/videos/resident-evil-4-hd-launch-trailer-ps3-xbox-360.mp4",
-      "id": 2
+      "id": "2"
     },
     {
       "title": "Tecnologías Frontend que te darán más empleo en el 2019",
@@ -28,7 +28,7 @@
       "videoType": "YoutubeVideo",
       "cover": "./database/images/covers/estado-del-frontend-2019.png",
       "src": "https://www.youtube.com/embed/YD0slY1P-uE",
-      "id": 3
+      "id": "3"
     },
     {
       "title": "#noTeRindas aun tras horas de trabajo y fracasos",
@@ -38,7 +38,7 @@
       "videoType": "YoutubeVideo",
       "cover": "./database/images/covers/noTeRindas.png",
       "src": "https://www.youtube.com/embed/eZGvSUNOlzo",
-      "id": 4
+      "id": "4"
     },
     {
       "title": "Assassins Creed Valhalla",
@@ -48,7 +48,7 @@
       "videoType": "NormalVideo",
       "cover": "./database/images/covers/assassins-creed-valhalla.png",
       "src": "./database/videos/assassins-creed-valhalla-el-amo-y-senor-de-inglaterra-anuncio-tv.mp4",
-      "id": 5
+      "id": "5"
     },
     {
       "title": "Resident Evil 4 HD Xbox 360",
@@ -58,7 +58,7 @@
       "videoType": "NormalVideo",
       "cover": "./database/images/covers/resident-evil-4-remake-in-works.png",
       "src": "./database/videos/resident-evil-4-hd-launch-trailer-ps3-xbox-360.mp4",
-      "id": 6
+      "id": "6"
     },
     {
       "title": "El estado de JavaScript para 2020",
@@ -68,7 +68,7 @@
       "videoType": "YoutubeVideo",
       "cover": "./database/images/covers/javascript-2020.png",
       "src": "https://www.youtube.com/embed/q5jix5Wuzg4",
-      "id": 7
+      "id": "7"
     },
     {
       "title": "DIBUJANDO A LO GRANDE | Mural en pared ÉPICO *con reacción*",
@@ -78,7 +78,7 @@
       "videoType": "YoutubeVideo",
       "cover": "./database/images/covers/goku-vegeta.png",
       "src": "https://www.youtube.com/embed/dQUHaTTGkxI",
-      "id": 8
+      "id": "8"
     },
     {
       "title": "Shadow of the Tomb Raider ",
@@ -88,7 +88,7 @@
       "videoType": "NormalVideo",
       "cover": "./database/images/covers/shadow-of-the-tomb-raider.png",
       "src": "./database/videos/shadow-of-the-tomb-raider-official-trailer.mp4",
-      "id": 9
+      "id": "9"
     }
   ]
 }

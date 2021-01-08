@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import HandleError from '../../error/containers/handleError'
 import HomeLayout from '../components/HomeLayout'
@@ -41,6 +42,7 @@ class Home extends Component{
   }
   
   render(){
+    console.log(this.props)
     return(
       <HandleError>
         <HomeLayout>
@@ -54,6 +56,7 @@ class Home extends Component{
           <Categories 
             categories={this.props.categories}
             handleOpenModal={this.handleOpenModal}
+            search={this.props.search}
             // setRef={this.setRef}
           />
           {
@@ -102,4 +105,12 @@ Home.propTypes = {
   playlist: PropTypes.array,
   users: PropTypes.array,
 }
-export default Home;
+function mapStateToProps({ data:{ categories, users, playlist}, search }, props){
+  return {
+    categories,
+    users,
+    playlist,
+    search,
+  }
+}
+export default connect (mapStateToProps)(Home);

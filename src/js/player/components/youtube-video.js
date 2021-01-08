@@ -10,8 +10,8 @@ function YoutubeVideo(props){
         width="560" 
         height="415" 
         src={props.src}
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen="allowfullscreen"
+        frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowFullScreen="allowfullscreen"
       ></iframe>
       <SvgContainer>
         <YoutubeIcon
@@ -21,5 +21,4 @@ function YoutubeVideo(props){
     </div>
   )
 }
-
 export default YoutubeVideo;
