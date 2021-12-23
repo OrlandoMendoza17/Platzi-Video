@@ -4,6 +4,7 @@ const reducer = (state, action) => {
   
   const filterSearchBy = (featureToFilter, list) =>{
     const foundItems = list.filter(item =>{
+      debugger
       const authorName = item[featureToFilter].toLocaleLowerCase()
       const SEARCH = action.payload.toLocaleLowerCase()
       return authorName.includes(SEARCH)
@@ -15,7 +16,7 @@ const reducer = (state, action) => {
   switch (action.type) {
     case 'SEARCH_VIDEO':{
       if(action.payload){
-        
+        debugger
         const list = categories.map(({ playlist }) => playlist ).flat()
         
         let foundItems = filterSearchBy("author", list).concat(
